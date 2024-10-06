@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  width: 22vw;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 25vh;
+  width: 100%;
+  background-color: rgba(46, 44, 44, 0.792);
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home ul {
+  list-style: none;
+  padding: 25px 12px 0px 7px;
+}
+
+.home ul li div {
+  gap: 14px;
+}
+
+.logoBar {
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+#collapse {
+  display: none;
+}
+
+#library {
+  padding: 12px;
+  gap: 8px;
+}
+
+.home span {
+  color: white;
+}
+
+.sidebar {
+  background-color: rgba(46, 44, 44, 0.792);
+  border-radius: 5px;
+  height: 75vh;
+  padding: 5px;
+  position: relative;
+}
+
+.songList {
+  max-height: 42vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.songList ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+.playNow span {
+  width: 50px;
+  font-size: 12px;
+}
+
+.sidefooter {
+  position: absolute;
+  bottom: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 2px;
+}
+
+.sidefooter a {
+  color: grey;
+}
+
+.main {
+  background-color: rgba(46, 44, 44, 0.792);
+  border-radius: 5px;
+  margin: 3px;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mainheader {
+  justify-content: space-between;
+  background-color: rgb(23 22 22);
+  border-radius: 4px;
+  padding-right: 25px;
+  padding-left: 10px;
+  height: 50px;
+}
+
+.headbtn button {
+  border-radius: 20px;
+  padding: 2px 6px 3px 7px;
+}
+
+.signUpBtn {
+  background-color: rgb(23 22 22);
+  border: none;
+  font-family: "Nerko One", cursive;
+  font-weight: 200;
+  font-style: normal;
+  color: grey;
+}
+.signUpBtn:hover {
+  cursor: pointer;
+  font-size: 1.01em;
+}
+
+.logInBtn {
+  background-color: white;
+  border: none;
+  font-family: "Nerko One", cursive;
+  font-weight: 200;
+  font-style: normal;
+  color: black;
+}
+.logInBtn:hover {
+  font-weight: 800;
+  width: 100px;
+}
+.playlist h1 {
+  font-size: 15px;
+  font-weight: 10;
+}
+.cardcontainer {
+  padding: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 70vh;
+  overflow-y: auto;
+  width: 78vw;
+}
+
+.card {
+  width: 172px;
+  height: 240px;
+  border-radius: 5px;
+  background-color: #272626;
+  position: relative;
+  cursor: pointer;
+}
+.card * {
+  padding-top: 8px;
+}
+.card img {
+  width: 80%;
+  object-fit: contain;
+  padding-left: 10%;
+}
+.roundbox {
+  width: 20px;
+  height: 20px;
+  background-color: #1db954;
+  border-radius: 20px;
+  top: 105px;
+  position: absolute;
+  right: 40px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 2s;
+}
+.card:hover .roundbox{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.roundbox img {
+  width: 24px;
+  height: 17px;
+  padding: 0px 0px 7px 2px;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+  background-color: grey;
+  border-radius: 4px;
+}
+.timeVol {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.volume img {
+  padding: 0px 6px;
+  width: 32px;
+}
+
+.seekbar {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.circle {
+  position: relative;
+  height: 8px;
+  width: 8px;
+  border-radius: 17px;
+  background: white;
+  bottom: 3px;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .left {
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s;
+    z-index: 1;
+    width: 235px;
+    background-color: black;
+  }
+
+  .main {
+    width: 100vw;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+  .arrows {
+    display: none;
+  }
+  .playbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardcontainer {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+}

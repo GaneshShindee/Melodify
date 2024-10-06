@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ultility.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="left">
+      <div class="home flex justify-content">
+        <div class="logoBar flex">
+        <div class="logo flex">
+          <img
+            width="24"
+            height="24"
+            class="invert"
+            src="assets/musicLogo.svg"
+            alt=""
+          />
+          <span>Spotify</span>
+        </div>
+        <div id="collapse" class="invert">
+          <img src="assets/collapse.svg" alt="collapse">
+        </div>
+      </div>
+        <ul>
+          <li>
+            <div class="flex">
+              <img class="invert" src="assets/homeLogo.svg" alt="home" /><span
+                >Home</span
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex">
+              <img
+                class="invert"
+                src="assets/searchLogo.svg"
+                alt="search"
+              /><span>Search</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar">
+        <div id="library" class="flex align-items">
+          <img class="invert" src="assets/libraryLogo.svg" alt="Library" />
+          <span>Library</span>
+        </div>
+        <div class="songList">
+          <ul>
+            
+          </ul>
+        </div>
+
+        <div class="sidefooter flex">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/"
+              ><span>Legal</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+              ><span>Privacy Policy</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+              ><span>Privacy Center</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/"
+              ><span>Accessibility</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="main">
+        <div class="mainheader flex align-items">
+          <img class="hamburger invert" src="assets/hamburger.svg" alt="hamburger">
+          <div >
+            <img class="invert arrows" src="assets/leftArrow.svg" alt="left" />
+            <img class="invert arrows" src="assets/rightArrow.svg" alt="right" />
+          </div>
+          <div class="headbtn">
+            <button class="signUpBtn">Sign up</button>
+            <button class="logInBtn">Log in</button>
+          </div>
+        </div>
+        <div class="playlist">
+          <h1>Spotify Playlists</h1>
+          <div class="cardcontainer flex">
+      
+          </div>
+        </div>
+
+        <div class="playbar flex">
+          <div class="seekbar">
+            <div class="circle">
+
+            </div>
+          </div>
+          <div class="songName">
+
+          </div>
+          <div class="songButtons">
+              <img id="previous" src="assets/previous.svg" alt="previous">
+              <img id="play" src="assets/play.svg" alt="play">
+              <img id="next" src="assets/next.svg" alt="next">
+          </div>
+          <div class="timeVol">
+          <div class="songTime">
+
+          </div>
+          <div class="volume invert">
+            <img src="assets/volume.svg" alt="volume">
+            <input type="range" name="volume" id="range">
+          </div>
+        </div>
+      </div>
+    
+    </div>
+      
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
