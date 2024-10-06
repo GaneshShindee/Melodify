@@ -3,6 +3,7 @@ let currentSong = new Audio();
 let songs;
 let currFolder;
 
+
 function formatTime(seconds) {
   seconds = Math.floor(seconds);
   const minutes = Math.floor(seconds / 60);
